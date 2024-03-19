@@ -14,7 +14,10 @@ variable "map" {
 }
 
 resource "aws_instance" "bar" {
-  string  = var.string
-  list    = var.list
-  map     = var.map
+  string = var.string
+  list   = var.list
+  map    = var.map
+  tags = {
+    yor_trace = "5f7b3034-02d8-42d7-884e-346b411e164c"
+  }
 }

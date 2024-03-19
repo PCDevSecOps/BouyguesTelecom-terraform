@@ -10,4 +10,7 @@ resource "aws_instance" "web" {
     "foo",
     "bar",
   ]
+  tags = {
+    yor_trace = "c2792560-fcb4-4921-a8ce-59c42f8cd3ec"
+  }
 }

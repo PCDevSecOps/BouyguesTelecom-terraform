@@ -14,4 +14,7 @@ output "given_instance_id" {
 
 resource "aws_instance" "foo" {
   foo = "${var.instance_id}"
+  tags = {
+    yor_trace = "0c6d5727-5090-4fc8-9282-7c560c3bf8f4"
+  }
 }

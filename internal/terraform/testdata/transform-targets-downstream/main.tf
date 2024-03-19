@@ -1,4 +1,7 @@
 resource "aws_instance" "foo" {
+  tags = {
+    yor_trace = "c6247ff4-7ea3-4750-baa4-2728629d823c"
+  }
 }
 
 module "child" {

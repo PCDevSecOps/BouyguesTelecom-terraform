@@ -6,6 +6,9 @@ resource "aws_instance" "foo" {
   lifecycle {
     create_before_destroy = true
   }
+  tags = {
+    yor_trace = "537e2cb0-7e24-47e2-a0c0-439584da78ff"
+  }
 }
 
 data "aws_vpc" "bar" {

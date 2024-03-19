@@ -7,4 +7,7 @@ resource "aws_instance" "foo" {
   # is unknown during plan, but we should still know that the unknown value
   # is a list of strings and so catch this during plan.
   ami = "${aws_ami_list.foo.ids}"
+  tags = {
+    yor_trace = "88a27bdc-c797-44cc-9d52-4a0f89e18d8e"
+  }
 }
