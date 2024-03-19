@@ -17,4 +17,7 @@ provider "arbitrary" {
 
 resource "aws_instance" "test" {
   provider = "arbitrary"
+  tags = {
+    yor_trace = "e8d2282c-4983-419f-9e07-4df06c8b240f"
+  }
 }
